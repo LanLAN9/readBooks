@@ -1,0 +1,97 @@
+/* 图书详情页面样式 */
+.booksdetail{
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+/* 顶部 */
+.top{
+    padding: 1rem;
+    background: rgba(0,0,0,.6);
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.top-left{
+    width: 40%;
+}
+.top-left>img{
+    width: 100%;
+}
+.top-right{
+    width: 50%;
+    font-family: Georgia, serif;
+    margin-left: 1rem;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    color: #fff;
+}
+.book-title{
+    margin: .5rem 0 3rem 0;
+}
+.top-right>div{
+    margin-bottom: 0.8rem;
+}
+.add{
+    /* margin: 1rem 0; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.add-btn{
+    width: 42%;
+    height: 2.8rem;
+    border-radius: 5px;
+}
+.read{
+    margin-right: 2rem;
+    border: 1px solid #fff;
+    background: var(--themecolor);
+    color: #fff;
+}
+.addbook{
+    border: 1px solid var(--themecolor);
+    background: #fff;
+    color: var(--themecolor);
+}
+.detail{
+    padding-top: 1rem;
+    margin: 1rem 0.5rem;
+    border-bottom: 0.1px solid gray;
+}
+.introduce{
+    margin: 1rem;
+    line-height: 1.5rem;
+}
+.catalog>pre{
+    margin-left: -0.7rem;
+    text-indent: -6rem;
+    line-height: 2rem;
+    font-size: 16px;
+}
+.catalog>h5{
+    margin-left: 1.4rem;
+}
+.publish{
+    margin: 0 1.2rem;
+    line-height: 1.5rem;
+}

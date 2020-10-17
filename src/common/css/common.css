@@ -1,0 +1,159 @@
+/* iconfont引入 */
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1210908 */
+  src: url('//at.alicdn.com/t/font_1210908_nuoteub8du.eot');
+  src: url('//at.alicdn.com/t/font_1210908_nuoteub8du.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1210908_nuoteub8du.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1210908_nuoteub8du.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1210908_nuoteub8du.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1210908_nuoteub8du.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.4rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* 主题变量 */
+:root {
+  --themecolor: rgb(45, 224, 255);
+  --themefont:serif;
+}
+
+/* title栏样式 */
+* {
+  margin: 0;
+  padding: 0
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  opacity: .8;
+  background-color: var(--themecolor, rgb(45, 224, 255));
+}
+
+.title::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.mint-tabbar>.mint-tab-item.is-selected {
+  color: var(--themecolor, rgb(45, 224, 255));
+}
+
+body{
+  font-family: var(--themefont);
+}
+
+/* 轮播图 */
+#lunbotPart {
+  margin-top: 2.5rem;
+}
+
+.mylunbot {
+  height: 10rem;
+  background: blue;
+  padding-top: 4rem;
+  opacity: .3
+}
+
+/* 搜索框 */
+#searchPart {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+#searchPart .mint-searchbar {
+  background: none;
+}
+
+#searchPart .mint-searchbar-inner {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 4rem;
+  background-color: #ffff;
+  opacity: .7;
+}
+
+.search {
+  height: 3rem;
+}
+
+/* 书籍分类列表 */
+#booksList {
+  /* border-bottom: 0.1rem solid rgba(0,0,0,.1) ; */
+}
+
+#booksList>ul {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, .1);
+}
+
+#booksList>ul>li {
+  list-style: none;
+  margin-bottom: .4rem;
+}
+
+#booksList>ul>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 图书推荐栏 */
+#recommondBooks {
+  margin: 0 2rem 5rem 2rem;
+}
+
+#recommondBooks img {
+  width: 25%;
+}
+
+#recommondBooks>.recommondBody {}
+
+#recommondBooks>.recommondBody>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-items: self-start;
+
+}
+
+#recommondBooks>.recommondBody>ul>li {
+  width: 29%;
+  margin-right: 10px;
+  margin-top: 1rem;
+}
+
+#recommondBooks>.recommondBody>ul>li img {
+  width: 100%;
+}
+
+/* 底部导航栏 */
+.buttom-nav {
+  position: fixed;
+}
+

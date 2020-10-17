@@ -1,0 +1,12 @@
+.tem{
+    margin: 60px 10px;
+}
+.tem>h2{
+    margin: 10px 0px;
+    text-align: center;
+}
+.tem>article{
+    text-indent: 2em;
+    line-height: 25px;
+    text-align: left;
+}
